@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "init": "mkdir dist && mkdir dist/_css",
+    "build": "npx tailwindcss -i \"css/input.css\" -o \"dist/_css/output.css\"",
+    "postbuild": "cp html/* dist",
+    "watch": "npx tailwindcss -i \"css/input.css\" -o \"dist/_css/output.css\" -w",
+    "postbuild": "cp html/* dist"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
