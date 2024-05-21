@@ -22,7 +22,6 @@
 go.work
 
 *.swp
-kussuma-web
-node_modules
-dist
+node_modules/
+www/css/output.css
 cmd/server/server

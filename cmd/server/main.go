@@ -7,13 +7,13 @@ import (
 
 func main() {
 	app := fiber.New()
-	dist, set := os.LookupEnv("KUSSUMA_WWW")
+	www, set := os.LookupEnv("KUSSUMA_WWW")
 	
 	if !set {
-		dist = "dist"
+		www = "www"
 	}
 
-	app.Static("/", dist)
+	app.Static("/", www)
 
 	app.Listen("127.0.0.1:3000")
 }
